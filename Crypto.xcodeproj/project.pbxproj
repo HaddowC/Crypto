@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6837EDCE28AFC77E002945F0 /* LineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6837EDCD28AFC77E002945F0 /* LineGraph.swift */; };
+		6837EDD128AFC824002945F0 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6837EDD028AFC824002945F0 /* CryptoModel.swift */; };
+		6837EDD428AFC90A002945F0 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6837EDD328AFC90A002945F0 /* AppViewModel.swift */; };
 		6843FB5128AEC17E00B2A57C /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843FB5028AEC17E00B2A57C /* CryptoApp.swift */; };
 		6843FB5328AEC17E00B2A57C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843FB5228AEC17E00B2A57C /* ContentView.swift */; };
 		6843FB5528AEC18000B2A57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6843FB5428AEC18000B2A57C /* Assets.xcassets */; };
@@ -14,6 +17,8 @@
 		6843FB6228AEC18000B2A57C /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843FB6128AEC18000B2A57C /* CryptoTests.swift */; };
 		6843FB6C28AEC18000B2A57C /* CryptoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843FB6B28AEC18000B2A57C /* CryptoUITests.swift */; };
 		6843FB6E28AEC18000B2A57C /* CryptoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843FB6D28AEC18000B2A57C /* CryptoUITestsLaunchTests.swift */; };
+		6843FB7C28AEC24200B2A57C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843FB7B28AEC24200B2A57C /* Home.swift */; };
+		6866183C28B0F5F700CC91E1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6866183B28B0F5F700CC91E1 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6837EDCD28AFC77E002945F0 /* LineGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraph.swift; sourceTree = "<group>"; };
+		6837EDD028AFC824002945F0 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		6837EDD328AFC90A002945F0 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		6843FB4D28AEC17E00B2A57C /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6843FB5028AEC17E00B2A57C /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
 		6843FB5228AEC17E00B2A57C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +52,7 @@
 		6843FB6728AEC18000B2A57C /* CryptoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6843FB6B28AEC18000B2A57C /* CryptoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUITests.swift; sourceTree = "<group>"; };
 		6843FB6D28AEC18000B2A57C /* CryptoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6843FB7B28AEC24200B2A57C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6866183C28B0F5F700CC91E1 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6837EDCF28AFC807002945F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6837EDD028AFC824002945F0 /* CryptoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6837EDD228AFC8F7002945F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6837EDD328AFC90A002945F0 /* AppViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		6843FB4428AEC17D00B2A57C = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				6843FB5028AEC17E00B2A57C /* CryptoApp.swift */,
+				6837EDD228AFC8F7002945F0 /* ViewModel */,
+				6837EDCF28AFC807002945F0 /* Model */,
+				6843FB7A28AEC23800B2A57C /* View */,
 				6843FB5228AEC17E00B2A57C /* ContentView.swift */,
 				6843FB5428AEC18000B2A57C /* Assets.xcassets */,
 				6843FB5628AEC18000B2A57C /* Preview Content */,
@@ -127,6 +156,15 @@
 			path = CryptoUITests;
 			sourceTree = "<group>";
 		};
+		6843FB7A28AEC23800B2A57C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6837EDCD28AFC77E002945F0 /* LineGraph.swift */,
+				6843FB7B28AEC24200B2A57C /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +181,9 @@
 			dependencies = (
 			);
 			name = Crypto;
+			packageProductDependencies = (
+				6866183B28B0F5F700CC91E1 /* SDWebImageSwiftUI */,
+			);
 			productName = Crypto;
 			productReference = 6843FB4D28AEC17E00B2A57C /* Crypto.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 6843FB4428AEC17D00B2A57C;
+			packageReferences = (
+				6866183A28B0F5F700CC91E1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 6843FB4E28AEC17E00B2A57C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6843FB5328AEC17E00B2A57C /* ContentView.swift in Sources */,
+				6843FB7C28AEC24200B2A57C /* Home.swift in Sources */,
+				6837EDD428AFC90A002945F0 /* AppViewModel.swift in Sources */,
 				6843FB5128AEC17E00B2A57C /* CryptoApp.swift in Sources */,
+				6837EDCE28AFC77E002945F0 /* LineGraph.swift in Sources */,
+				6837EDD128AFC824002945F0 /* CryptoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6866183A28B0F5F700CC91E1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6866183B28B0F5F700CC91E1 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6866183A28B0F5F700CC91E1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6843FB4528AEC17D00B2A57C /* Project object */;
 }
